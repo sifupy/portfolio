@@ -1,0 +1,291 @@
+html{
+    font-family: 'Josefin Sans', sans-serif;
+}
+body {
+    background-color: #171a1c;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .return{
+    visibility: hidden;
+}
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+span{
+    color:#628ecb;
+}
+
+nav{
+    padding-top: 2.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    scroll-behavior: smooth;
+
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: #628ecb;
+    text-decoration: none;
+}
+
+.btn{
+    background-color: #628ecb;
+    border-radius:30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 150px;  
+    border: 2px solid transparent;  
+
+}
+.btn-return{
+    background-color: #628ecb;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid transparent; 
+    height: 40px;
+}
+.btn-return:hover{
+    border: 2px solid #628ecb;
+    background-color: #171a1c;
+    text-decoration: none;
+}
+.btn:hover{
+    border: 1px solid #628ecb;
+    background-color: #171a1c;
+    text-decoration: none;
+}
+h1{
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+}
+.links{
+    margin-top: 3.5rem;
+
+}
+.links img{
+    width:2.5rem;
+    margin-right: 2rem;
+    transition: 0.4s;
+}
+.links img:hover{
+    transform:scale(1.2);
+}
+
+section {
+    opacity: 0;
+    padding: 2rem 3rem;
+    transform: translateY(20px);
+    filter: blur(5px);
+    transition: opacity 0.6s, transform 0.8s;
+
+}
+
+section.active {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+}
+.card{
+    padding: .4rem;
+    height: 220px;
+    border-radius: 10px;
+}
+.card h3{
+    color: #628ecb;
+}
+.card p{
+    opacity: .8;
+    color:#fff;
+}
+/* ... Your existing CSS rules ... */
+
+.cadrepro {
+    height: 20px;
+    background-color: #CCC;
+    position: relative;
+    margin: 3px;
+    border-radius: 7px;
+}
+
+.cadrepro .progress-bar {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #628ecb;
+    border-radius: 7px;
+}
+
+
+.html-progress {
+    animation: html-progress-animation 5s forwards;
+}
+
+.css-progress {
+    animation: css-progress-animation 5s forwards;
+}
+.django-progress {
+    animation:django-progress-animation 5s forwards;
+}
+.bootstrap-progress {
+    animation:bootstrap-progress-animation 5s forwards;
+}
+
+@keyframes html-progress-animation {
+    0% { width: 0%; }
+    100% { width: 90%; } 
+}
+
+@keyframes css-progress-animation {
+    0% { width: 0%; }
+    100% { width: 70%; }
+}
+@keyframes bootstrap-progress-animation {
+    0% {width:0%;}
+    100% {width:85%;}
+}
+@keyframes django-progress-animation {
+    0% {width:0%;}
+    100% {width:80%;}
+}
+@keyframes ml-progress-animation {
+    0% {width:0%;}
+    100% {width:65%;}
+}
+
+.circular-image {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%; 
+    overflow: hidden; 
+   
+}
+
+.circular-image img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+.box{
+    position:relative;
+    width: 400px;
+    height: 400px;
+    margin-left: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.box::before{
+    content: '';
+    position: absolute;
+    inset: 90px 0px 90px 0px;
+    background: #628ecb;
+    transition: 0.5s;
+    
+    
+}
+.box:hover{
+    transform: scale(1.2);
+}
+@keyframes animate {
+    0%{transform:rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    
+}
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background-color: #171a1c;
+    border-radius: 50%;
+    z-index: 1;
+}
+.content{
+    position: absolute;
+    inset: 30px;
+    border: 6px solid #CCC;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+}
+.box:hover .content img {
+    opacity: 0;
+}
+.box:hover .content{
+    border: 6px solid transparent;
+}
+
+.content h2{
+    position: relative;
+    padding: .8rem;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.content a:hover{
+    text-decoration: none;
+    color: #fff;
+
+}
+.col-sm p{
+    opacity: .8;
+    color:#fff;
+}
+b{
+    opacity: 1 ;
+    color: #fff;
+}
