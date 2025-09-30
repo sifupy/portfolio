@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <title>Sayf Portfolio</title>
+  <style>
+    h1, h2, h3 { font-family: 'Patrick Hand', cursive; }
+    p, li, a, button { font-family: 'Nunito', sans-serif; }
+    @keyframes float { 0%,100%{ transform: translateY(0) } 50%{ transform: translateY(-10px) } }
+    .animate-float { animation: float 4s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-[#eeeeee] font-sans px-6 md:px-12">
+  <div class="container mx-auto p-6">
+    
+    <!-- Navbar -->
+    <nav class="flex justify-center mb-12">
+      <ul class="flex space-x-6 text-[#284c96] font-semibold">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#sayfware">Sayfware</a></li>
+        <li><a href="#vinyl">Vinyl</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="h-screen grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-12">
+      <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-6">
+        <h2 class="text-2xl text-[#55858f]">Hi, I'm</h2>
+        <h1 class="text-5xl md:text-6xl font-bold text-[#284c96]">Sayf eddine Addar</h1>
+        <p class="text-lg md:text-xl text-[#284c96] max-w-lg">
+          I'm a passionate developer and aspiring researcher, with a passion for creating aesthetic things.  
+          Interested in data science and web development.  
+          Trying to spread my creativity everywhere.
+        </p>
+
+        <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mt-6 justify-center">
+          <a href="../presets/Addar_SeifEddine_CV.pdf" download
+            class="bg-[#55858f] text-[#eeeeee] font-bold px-6 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition transform text-center">
+            Download My Resume
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&to=sifeddine.addar@gmail.com" target="_blank"
+   class="bg-[#837e6b] text-[#eeeeee] font-bold px-6 py-3 rounded-xl shadow-md hover:shadow-lg hover:scale-105 transition transform text-center">
+   Contact Me
+</a>
+        </div>
+
+
+        <!-- Social Links -->
+        <div class="flex space-x-6 text-2xl text-[#284c96] mt-4">
+          <a href="https://github.com/sifupy" target="_blank" class="hover:text-[#55858f] transition"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/sifeddine-addar" target="_blank" class="hover:text-[#55858f] transition"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/sayf__adr" target="_blank" class="hover:text-[#55858f] transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Right Illustration -->
+      <div class="relative flex justify-center md:justify-end">
+        <img src="../presets/totoro.png" alt="Totoro" class=" ">
+      </div>
+    </section>
+<!-- About -->
+<section id="about" class="relative bg-[#fdfaf6] py-16 px-6">
+  <h2 class="text-4xl font-bold text-center text-[#284c96] mb-12">About Me</h2>
+
+  <div class="max-w-4xl mx-auto relative">
+    <!-- Train line -->
+    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#284c96]/40"></div>
+
+    <!-- Station 1 -->
+    <div class="mb-12 flex items-center w-full">
+      <div class="w-1/2 pr-8 text-right">
+        <h3 class="text-xl font-semibold text-[#284c96]">🎓 2021 - CS Bachelor's</h3>
+        <p class="text-gray-600">Started Computer Science at <strong>Univ Saad Dahleb Blida</strong>, marking the beginning of my academic journey.</p>
+      </div>
+      <div class="relative z-10">
+        <div class="w-8 h-8 rounded-full bg-[#284c96] border-4 border-white shadow-lg"></div>
+      </div>
+      <div class="w-1/2"></div>
+    </div>
+
+    <!-- Station 2 -->
+    <div class="mb-12 flex items-center w-full flex-row-reverse">
+      <div class="w-1/2 pl-8">
+        <h3 class="text-xl font-semibold text-[#284c96]">📊 2022 - Data Analysis</h3>
+        <p class="text-gray-600">Discovered my passion for data, exploring <strong>Pandas, NumPy, and visualization</strong> techniques.</p>
+      </div>
+      <div class="relative z-10">
+        <div class="w-8 h-8 rounded-full bg-[#284c96] border-4 border-white shadow-lg"></div>
+      </div>
+      <div class="w-1/2"></div>
+    </div>
+
+    <!-- Station 3 -->
+    <div class="mb-12 flex items-center w-full">
+      <div class="w-1/2 pr-8 text-right">
+        <h3 class="text-xl font-semibold text-[#284c96]">💻 2023 - Web Development</h3>
+        <p class="text-gray-600">Built projects using <strong>Django, React, Tailwind</strong>, and gained full-stack development skills.</p>
+      </div>
+      <div class="relative z-10">
+        <div class="w-8 h-8 rounded-full bg-[#284c96] border-4 border-white shadow-lg"></div>
+      </div>
+      <div class="w-1/2"></div>
+    </div>
+
+    <!-- Station 4 -->
+    <div class="mb-12 flex items-center w-full flex-row-reverse">
+      <div class="w-1/2 pl-8">
+        <h3 class="text-xl font-semibold text-[#284c96]">🎓 2024 - CS Degree</h3>
+        <p class="text-gray-600">Graduated with a <strong>Bachelor's in Computer Science</strong>, ready to step into advanced research fields.</p>
+      </div>
+      <div class="relative z-10">
+        <div class="w-8 h-8 rounded-full bg-[#284c96] border-4 border-white shadow-lg"></div>
+      </div>
+      <div class="w-1/2"></div>
+    </div>
+
+    <!-- Station 5 -->
+    <div class="mb-12 flex items-center w-full">
+      <div class="w-1/2 pr-8 text-right">
+        <h3 class="text-xl font-semibold text-[#284c96]">📚 2025 - Master's in Data Science & NLP</h3>
+        <p class="text-gray-600">Currently pursuing a <strong>Master’s in Data Science & NLP</strong>, blending AI with computational linguistics.</p>
+      </div>
+      <div class="relative z-10">
+        <div class="w-8 h-8 rounded-full bg-[#284c96] border-4 border-white shadow-lg"></div>
+      </div>
+      <div class="w-1/2"></div>
+    </div>
+
+    <div class="flex items-center w-full mt-16">
+      <div class="w-1/2 pr-8 text-right">
+        <h3 class="text-xl font-semibold text-[#284c96]">✨ Future Journey</h3>
+        <p class="text-gray-600">The adventure continues — towards <strong>researchs, and new discoveries</strong>, riding with Catbus 🐱🚌</p>
+      </div>
+
+      <div class="relative z-10 animate-bounce">
+        <img src="../presets/Cat_Bus-removebg-preview.png" alt="Catbus" class="w-28 h-28 object-contain drop-shadow-lg" />
+      </div>
+
+      <div class="w-1/2"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="mb-12 bg-[#eeeeee] py-16 px-6 relative h-screen">
+  <h2 class="text-4xl font-bold text-center text-[#284c96] mb-12">Projects</h2>
+  <img src="../presets/pngegg (1).png" alt="Totoro" class="absolute top-32 left-4 w-28 opacity-80">
+
+  <div class="max-w-3xl mx-auto space-y-8 relative z-10">
+    
+    <!-- Project 1 -->
+    <div class="flex items-start">
+      <span class="text-2xl mr-4">🚏</span>
+      <div>
+        <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61579622233173" target="_blank" 
+           class="text-xl font-semibold text-[#284c96] hover:underline">
+          Sayfware Solutions
+        </a>
+        <p class="text-gray-600">
+          A one-man tech company delivering full-stack software solutions and custom applications.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="flex items-start">
+      <span class="text-2xl mr-4">🚏</span>
+      <div>
+        <a href="#" 
+           class="text-xl font-semibold text-[#284c96] hover:underline">
+          Docs Generator
+        </a>
+        <p class="text-gray-600">
+          Tool to automatically generate documentation for GitHub repositories.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="flex items-start">
+      <span class="text-2xl mr-4">🚏</span>
+      <div>
+        <a href="https://github.com/sifupy/FootballMetricsAI-" target="_blank" 
+           class="text-xl font-semibold text-[#284c96] hover:underline">
+          FootballMetric.ai
+        </a>
+        <p class="text-gray-600">
+          A full football data analytics project with advanced metrics and a player rating model.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="flex items-start">
+      <span class="text-2xl mr-4">🚏</span>
+      <div>
+        <a href="https://github.com/sifupy/Trivo-world" target="_blank" 
+           class="text-xl font-semibold text-[#284c96] hover:underline">
+          Trivo
+        </a>
+        <p class="text-gray-600">
+          A social platform for travelers to share posts, experiences, and community trip plans.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="flex items-start">
+      <span class="text-2xl mr-4">🚏</span>
+      <div>
+        <a href="https://sherlocknlp.vercel.app" target="_blank" 
+           class="text-xl font-semibold text-[#284c96] hover:underline">
+          Sherlock NLP Story
+        </a>
+        <p class="text-gray-600">
+          An aesthetic website that shows the full journey of an NLP pipeline in an interactive storytelling way.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="flex items-start">
+      <span class="text-2xl mr-4">🚏</span>
+      <div>
+        <a href="https://github.com/sifupy/web_enna" target="_blank" 
+           class="text-xl font-semibold text-[#284c96] hover:underline">
+          Document Management Web App
+        </a>
+        <p class="text-gray-600">
+          A management platform for handling sensitive documents at an air navigation company.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="flex items-start">
+      <span class="text-2xl mr-4">🚏</span>
+      <div>
+        <a href="#"  
+           class="text-xl font-semibold text-[#284c96] hover:underline">
+          Delivery Route Optimizer
+        </a>
+        <p class="text-gray-600">
+          Optimization model to regroup deliveries efficiently, reducing costs and improving routes.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <img src="../presets/ghost.png" alt="Totoro" class="absolute bottom-4 right-4 w-32 opacity-80">
+</section>
+
+<!-- Skills -->
+<section id="skills" class="h-screen relative bg-[#fdfaf6]">
+
+  <div class="relative h-full flex flex-col">
+
+
+    <h2 class="text-3xl font-bold text-center text-[#284c96] mt-6">Skills</h2>
+
+    <div class="flex-1 relative overflow-hidden p-12">
+      <!-- Slides -->
+      <div id="skills-slides" class="flex transition-transform duration-500 h-full">
+        
+        <!-- Tab 1: Web Dev -->
+        <div class="min-w-full h-full py-20 px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="flex justify-center">
+            <div class="w-64 h-64">
+              <img src="../presets/ri22.png" alt="Web Dev" class="object-contain">
+            </div>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-[#284c96] mb-6">Web Development</h2>
+            <ul class="grid grid-cols-2 gap-4 text-[#284c96]">
+              <li>HTML / CSS (Semantic & Responsive)</li>
+              <li>JavaScript (ES6+, DOM Manipulation, Fetch API)</li>
+              <li>React (Hooks, Context, State Management)</li>
+              <li>Django &  REST Framework (API Development, JWT Auth)</li>
+              <li>Tailwind CSS & Styling Best Practices</li>
+              <li>PostgreSQL (Database Design & Query Optimization)</li>
+              <li>REST APIs & API Integration</li>
+              <li>User Authentication & Authorization</li>
+              <li>Deployment (Heroku, AWS, Docker)</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <!-- Tab 2: Data Science -->
+        <div class="min-w-full h-full py-20 px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="flex justify-center">
+            <img src="../presets/ri5.png" alt="Data Science" class="w-64 h-64">
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-[#284c96] mb-6">Data Science</h2>
+            <ul class="grid grid-cols-2 gap-4 text-[#284c96]">
+              <li>Python (Advanced Programming & Scripting)</li>
+              <li>Pandas & NumPy (Data Manipulation & Analysis)</li>
+              <li>Scikit-learn & TensorFlow (ML & Deep Learning)</li>
+              <li>Natural Language Processing (spaCy, NLTK, Transformers)</li>
+              <li>Data Cleaning & Feature Engineering</li>
+              <li>Matplotlib, Seaborn & Plotly (Advanced Visualizations)</li>
+              <li>SQL & PostgreSQL (Data Extraction & Query Optimization)</li>
+              <li>Time Series Analysis </li>
+              <li>Power BI & Tableau (Interactive Dashboards)</li>
+              <li>Model Deployment & Evaluation Metrics</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <!-- Tab 3: Other -->
+        <div class="min-w-full h-full py-20 px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="flex justify-center">
+            <img src="../presets/ri6.png" alt="Other Skills" class="w-64 h-64">
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-[#284c96] mb-6">Other</h2>
+            <ul class="grid grid-cols-2 gap-4 text-[#284c96]">
+              <li>Git / GitHub</li>
+              <li>Docker</li>
+              <li>Linux</li>
+              <li>CI/CD</li>
+              <li>Agile / Scrum</li>
+              <li>UI/UX Basics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <button onclick="prevSkill()" class="absolute top-1/2 left-4 -translate-y-1/2 bg-[#837e6b] text-white p-3 rounded-full shadow-md hover:bg-[#55858f] transition">
+        ‹
+      </button>
+      <button onclick="nextSkill()" class="absolute top-1/2 right-4 -translate-y-1/2 bg-[#837e6b] text-white p-3 rounded-full shadow-md hover:bg-[#55858f] transition">
+        ›
+      </button>
+    </div>
+
+    <!-- Bottom Dots -->
+    <div class="flex justify-center space-x-3 mb-6">
+      <button class="dot w-3 h-3 rounded-full bg-[#ccc]" onclick="goToSkill(0)"></button>
+      <button class="dot w-3 h-3 rounded-full bg-[#ccc]" onclick="goToSkill(1)"></button>
+      <button class="dot w-3 h-3 rounded-full bg-[#ccc]" onclick="goToSkill(2)"></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Sayfware Solutions / Services -->
+<section id="sayfware" class="mt-12 bg-[#fdfaf6] py-16 px-6 relative h-screen">
+  <h2 class="text-4xl font-bold text-center text-[#284c96] mb-12">
+    Sayfware Solutions
+  </h2>
+
+  <!-- Illustration in the corner (Totoro with umbrella or small Totoro) -->
+  <img src="../presets/pngegg (1).png" alt="Totoro" class="absolute top-8 left-8 w-14 opacity-80">
+
+  <div class="max-w-4xl mx-auto text-center space-y-8 relative z-10">
+    <!-- Vision -->
+    <div>
+      <h3 class="text-2xl font-semibold text-[#284c96] mb-4">🌱 Our Vision</h3>
+      <p class="text-gray-700 leading-relaxed">
+        At <span class="font-bold text-[#284c96]">Sayfware Solutions</span>, 
+        I aim to deliver ready-to-use digital products to empower businesses 
+        while fostering a creative environment where innovative ideas can grow.  
+        From AI-powered tools to modern web applications, the goal is to blend 
+        technology with creativity to build solutions that truly matter.
+      </p>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-2xl font-semibold text-[#284c96] mb-6">🚀 Services I Offer</h3>
+      <ul class="grid md:grid-cols-2 gap-6 text-left max-w-3xl mx-auto">
+        <li class="flex items-start">
+          <span class="text-2xl mr-3">🤖</span>
+          <div>
+            <h4 class="font-semibold text-[#284c96]">AI & Data Solutions</h4>
+            <p class="text-gray-600 text-sm">
+              Machine learning models, NLP pipelines, and data-driven insights to
+              support smarter decision-making.
+            </p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-2xl mr-3">💻</span>
+          <div>
+            <h4 class="font-semibold text-[#284c96]">Web Development</h4>
+            <p class="text-gray-600 text-sm">
+              Full-stack web applications with Django, React, and modern UI/UX 
+              tailored to your business.
+            </p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-2xl mr-3">📊</span>
+          <div>
+            <h4 class="font-semibold text-[#284c96]">Business Analytics</h4>
+            <p class="text-gray-600 text-sm">
+              Collecting, cleaning, and analyzing data to help companies understand 
+              their performance and optimize operations.
+            </p>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-2xl mr-3">✨</span>
+          <div>
+            <h4 class="font-semibold text-[#284c96]">Creative Custom Solutions</h4>
+            <p class="text-gray-600 text-sm">
+              Building innovative, one-of-a-kind projects that combine technology 
+              with imagination.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <img src="../presets/pngegg.png" alt="Soot Sprites" class="absolute bottom-12 right-8 w-32 opacity-80">
+</section>
+
+  </div>
+<section id="vinyl" class="h-screen py-24 relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center mx-6 md:mx-20 mt-16">
+  <!-- Left Column -->
+  <div class="text-center md:text-left space-y-8">
+    <h2 class="text-4xl md:text-5xl font-bold text-[#284c96] leading-snug">
+      Sayfware Studio — Where Code Meets Creativity
+    </h2>
+    <p class="text-lg text-[#284c96]/80 italic">
+      Blending Studio Ghibli’s magic with real-world solutions ✨
+    </p>
+    <p class="text-gray-700 max-w-md md:max-w-lg">
+      Just like every vinyl has its own melody, each project I create spins with
+      its unique rhythm. My goal is to deliver ready solutions to businesses
+      while building a creative environment for innovative ideas in web
+      development, AI, and collaborative research.
+    </p>
+    <div class="flex justify-center md:justify-center">
+      <img src="../presets/Studio Ghibli Art GIF by Tech Noir.gif" alt="Totoro Illustration"
+        class="image-cover w-full h-full ">
+    </div>
+  </div>
+
+  <!-- Right Column -->
+  <div class="flex flex-col items-center space-y-10">
+    <!-- Vinyl image -->
+    <div class="relative flex justify-center items-center">
+      <div
+        class="absolute w-32 h-32 bg-[#fceabb] rounded-full opacity-40 blur-xl animate-ping">
+      </div>
+      <img id="vinylImage" src="../presets/gif/vinyl_intro.gif" alt="Vinyl Spinning"
+        class="w-56 md:w-72 drop-shadow-lg" />
+    </div>
+
+    <!-- Track Title / Service -->
+    <h3 id="trackTitle"
+      class="text-xl font-semibold text-[#284c96] italic px-6 py-3 bg-white/80 rounded-2xl shadow-md">
+      Loading...
+    </h3>
+
+    <!-- Controls -->
+    <div class="flex space-x-10 mt-4 justify-center">
+      <!-- Prev -->
+      <button onclick="prevTrack()"
+        class="w-12 h-12 rounded-full bg-white shadow-lg border border-[#284c96]/20 flex items-center justify-center hover:scale-110 hover:bg-[#284c96]/5 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#284c96]"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M10 19l-7-7 7-7v14zM21 19l-7-7 7-7v14z" />
+        </svg>
+      </button>
+
+      <!-- Play / Pause -->
+      <button onclick="togglePlay()" id="playBtn"
+        class="w-16 h-16 rounded-full bg-gradient-to-tr from-[#ffb347] to-[#ff984c] shadow-lg flex items-center justify-center hover:scale-110 transition">
+        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg"
+          class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M6 4l12 6-12 6V4z" />
+        </svg>
+      </button>
+
+      <!-- Next -->
+      <button onclick="nextTrack()"
+        class="w-12 h-12 rounded-full bg-white shadow-lg border border-[#284c96]/20 flex items-center justify-center hover:scale-110 hover:bg-[#284c96]/5 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#284c96]"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M13 5l7 7-7 7V5zM3 5l7 7-7 7V5z" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Hidden Audio Player -->
+    <audio id="vinylPlayer"></audio>
+  </div>
+</section>
+
+<footer class="mt-12 text-center text-[#284c96] py-6 border-t flex flex-col items-center space-y-4">
+  <!-- Round profile image -->
+  <img src="../presets/photo_1_2025-09-27_23-09-10.jpg" alt="Sayf Adr" class="w-20 h-20 rounded-full border-2 border-[#284c96] shadow-lg object-cover">
+
+  <!-- Footer text -->
+  <p>© 2025 Sayf Adr — My Ghibli Portfolio</p>
+</footer>
+<!-- Mobile Warning Modal -->
+<div id="mobileModal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-xl p-8 max-w-sm text-center shadow-lg">
+    <h2 class="text-2xl font-bold text-[#284c96] mb-4">For the Best Experience</h2>
+    <p class="text-gray-700 mb-6">
+      This website works best on a desktop.  
+      You can try using your phone in desktop mode, but some features may be limited.
+    </p>
+    <button id="closeModal" class="bg-[#55858f] text-white px-6 py-2 rounded-xl hover:scale-105 transition">
+      Got it
+    </button>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
